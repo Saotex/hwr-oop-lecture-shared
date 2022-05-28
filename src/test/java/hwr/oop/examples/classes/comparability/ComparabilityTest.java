@@ -11,11 +11,13 @@ class ComparabilityTest {
 
     private Train first;
     private Train second;
+    private Train third;
 
     @BeforeEach
     void setUp() {
         first = new Train(12);
         second = new Train(13);
+        third = new Train(14);
     }
 
     @Test
@@ -47,4 +49,5 @@ class ComparabilityTest {
         int result = comparator.compare(second, first);
         assertThat(result).isPositive().isNotZero();
     }
+
 }

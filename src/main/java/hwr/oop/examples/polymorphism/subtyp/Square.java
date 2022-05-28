@@ -1,8 +1,5 @@
 package hwr.oop.examples.polymorphism.subtyp;
 
-class Square extends Rectangle {
+public interface Square extends Rectangle, Rhombus {
 
-    public Square(double sideLength) {
-        super(sideLength, sideLength);
-    }
 }

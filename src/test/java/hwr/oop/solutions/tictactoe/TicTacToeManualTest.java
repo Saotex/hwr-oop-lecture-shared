@@ -25,7 +25,6 @@ class TicTacToeManualTest {
     }
 
     @Test
-    @Disabled("manual test")
     void playUntilGameOver() {
         int currentTurn = 0;
         while (!game.isGameOver()) {

@@ -12,7 +12,7 @@ class HelloWorldTest {
 
     @Test
     void helloWorld_givesUsAHelloWorldString() {
-        HelloWorld helloWorld = new HelloWorld();
+        HelloWorld helloWorld = new HelloWorld("World");
         String output = helloWorld.getOutputString();
         Assertions.assertThat(output).isEqualTo("Hello World");
     }

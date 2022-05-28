@@ -36,8 +36,8 @@ class GameOfLifeTest {
     void getNeighbours_cellAtCenterPosition_cellHasEightNeighboursWhichAreNextToCenterPosition() {
 
         // given
-        Field gameField = new Field(10);
-        Position centerPosition = new Position(5, 5);
+        Field gameField = new Field(5);
+        Position centerPosition = new Position(2, 2);
         Cell cell = gameField.getCellAt(centerPosition);
         // when
         Cell[] neighbours = cell.getNeighbours();
